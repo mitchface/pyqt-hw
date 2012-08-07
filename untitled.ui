@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>97</height>
+    <width>430</width>
+    <height>253</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -29,7 +29,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>430</width>
      <height>21</height>
     </rect>
    </property>
@@ -39,12 +39,36 @@
     </property>
     <addaction name="actionQuit"/>
    </widget>
+   <widget class="QMenu" name="menuFag">
+    <property name="title">
+     <string>fag</string>
+    </property>
+    <addaction name="actionYes"/>
+    <addaction name="actionNo"/>
+   </widget>
    <addaction name="menuMenu"/>
+   <addaction name="menuFag"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionQuit">
    <property name="text">
     <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionYes">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>yes</string>
+   </property>
+  </action>
+  <action name="actionNo">
+   <property name="text">
+    <string>no</string>
    </property>
   </action>
  </widget>
